@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context="com.example.codetribe.abcquiz.QustionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="1"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/brainfall_app_icon"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/Name"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Pick a topic to play!"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ff81"
+        android:onClick="education"
+        android:textAlignment="center"
+        android:drawableRight="@mipmap/ic_book"
+        android:text="Education" />
+
+    <Button
+        android:id="@+id/technology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="technology"
+        android:layout_marginBottom="30dp"
+        android:drawableRight="@mipmap/ic_laptop"
+        android:textAlignment="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Technology" />
+
+        <Button
+            android:id="@+id/politics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_green_light"
+            android:drawableRight="@mipmap/ic_glob"
+            android:onClick="politics"
+            android:text="Politics"
+            android:textAlignment="center" />
+
+
+</LinearLayout>
+</ScrollView>

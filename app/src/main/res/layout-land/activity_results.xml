@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context="com.example.codetribe.abcquiz.QustionActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/congrats"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="16dp"
+            android:text="Your Score"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:textAlignment="center"
+            android:text="0"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+
+        <Button
+            android:id="@+id/retake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="#0092a6"
+            android:drawableRight="@mipmap/ic_main"
+            android:text="Main Menu"
+            android:onClick="Retake"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</ScrollView>
